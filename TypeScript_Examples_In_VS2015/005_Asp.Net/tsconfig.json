@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true, //Raise error on expressions and declarations with an implied ‘any’ type.
+    "noEmitOnError": true, //Do not emit outputs if any errors were reported.
+    "sourceMap": true, //Generates corresponding ‘.map’ file.
+    "target": "es5", //Specify ECMAScript target version: 'es3' (default), 'es5', or 'es6'
+    "outDir": "./Scripts/App", //Redirect output structure to the directory.
+    "module": "amd"
+  },
+  "compileOnSave": true //compileOnSave signals to the IDE to generate all files for a given tsconfig.json upon saving -
+}
+
