@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009_SystemJS_Basic", "009_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008_RequireJS_Basic", "008_RequireJS_Basic\008_RequireJS_Basic.csproj", "{86F60DC0-5D17-4303-84E6-553CDE24C82B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "010_Dynamic_Module_Loading-System.js", "010_Dynamic_Module_Loading-System.js\010_Dynamic_Module_Loading-System.js.csproj", "{DCEC37DA-55CF-48C1-816F-4798FAEC5221}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{86F60DC0-5D17-4303-84E6-553CDE24C82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86F60DC0-5D17-4303-84E6-553CDE24C82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86F60DC0-5D17-4303-84E6-553CDE24C82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCEC37DA-55CF-48C1-816F-4798FAEC5221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCEC37DA-55CF-48C1-816F-4798FAEC5221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCEC37DA-55CF-48C1-816F-4798FAEC5221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCEC37DA-55CF-48C1-816F-4798FAEC5221}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
