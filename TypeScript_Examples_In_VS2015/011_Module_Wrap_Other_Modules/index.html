@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <script src="system.js"></script>
+    <script src="typescript.js"></script>
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            packages: {
+                src: {
+                    defaultExtension: 'ts'
+                }
+            }
+        });
+        System
+          .import('src/app')
+          .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <div id="content"></div>
+</body>
+</html>
