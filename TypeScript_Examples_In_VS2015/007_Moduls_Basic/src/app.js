@@ -1,17 +1,29 @@
-/*
-There is a one-to-one correspondence between JS files and modules
-*/
-System.register(["./myModule"], function(exports_1, context_1) {
+System.register(["./ZipCodeValidator", "./LettersOnlyValidator"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var myModule_1;
+    var ZipCodeValidator_1, LettersOnlyValidator_1;
+    var strings, validators;
     return {
         setters:[
-            function (myModule_1_1) {
-                myModule_1 = myModule_1_1;
+            function (ZipCodeValidator_1_1) {
+                ZipCodeValidator_1 = ZipCodeValidator_1_1;
+            },
+            function (LettersOnlyValidator_1_1) {
+                LettersOnlyValidator_1 = LettersOnlyValidator_1_1;
             }],
         execute: function() {
-            myModule_1.doSomething();
+            // Some samples to try
+            strings = ["Hello", "98052", "101"];
+            // Validators to use
+            validators = {};
+            validators["ZIP code"] = new ZipCodeValidator_1.ZipCodeValidator();
+            validators["Letters only"] = new LettersOnlyValidator_1.LettersOnlyValidator();
+            // Show whether each string passed each validator
+            strings.forEach(function (s) {
+                for (var name_1 in validators) {
+                    console.log("\"" + s + "\" - " + (validators[name_1].isAcceptable(s) ? "matches" : "does not match") + " " + name_1);
+                }
+            });
         }
     }
 });

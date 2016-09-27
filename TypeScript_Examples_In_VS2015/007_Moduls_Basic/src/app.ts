@@ -1,8 +1,22 @@
-﻿/*
-There is a one-to-one correspondence between JS files and modules
-*/
+﻿import { StringValidator } from "./Validation";
+import { ZipCodeValidator } from "./ZipCodeValidator";
+import { LettersOnlyValidator } from "./LettersOnlyValidator";
 
-import {  doSomething  } from "./myModule";
+// Some samples to try
+let strings = ["Hello", "98052", "101"];
 
-doSomething();
+// Validators to use
+let validators: { [s: string]: StringValidator; } = {};
+validators["ZIP code"] = new ZipCodeValidator();
+validators["Letters only"] = new LettersOnlyValidator();
+
+// Show whether each string passed each validator
+strings.forEach(s => {
+    for (let name in validators) {
+        console.log(`"${s}" - ${validators[name].isAcceptable(s) ? "matches" : "does not match"} ${name}`);
+    }
+});
+
+
+
 
