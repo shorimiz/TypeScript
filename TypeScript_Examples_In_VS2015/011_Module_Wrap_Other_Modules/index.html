@@ -11,7 +11,10 @@
             transpiler: 'typescript',
             packages: {
                 src: {
-                    defaultExtension: 'ts'
+                    defaultExtension: 'ts',
+                    meta: {
+                        '*.ts': { format: 'esm' }
+                    }
                 }
             }
         });
